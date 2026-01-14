@@ -5,6 +5,8 @@
  * SEO-friendly and maintainable
  */
 
+import React from 'react';
+
 export interface WorkflowFeature {
   title: string;
   subtitle: string;
