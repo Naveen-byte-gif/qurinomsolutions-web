@@ -1,0 +1,547 @@
+/**
+ * Complete Workflow Section Styles
+ * 
+ * Professional, responsive design with Bootstrap grid
+ * Optimized for all device sizes (mobile, tablet, laptop, desktop)
+ * SEO-friendly and accessible
+ * Matches the design from the provided image
+ */
+
+/* Complete Workflow Section Container */
+.complete-workflow-section {
+  padding: 5rem 0;
+  background: #FAFAFA;
+  position: relative;
+  overflow: hidden;
+}
+
+.complete-workflow-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(32, 178, 170, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 70% 70%, rgba(32, 178, 170, 0.02) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Section Header */
+.complete-workflow-header {
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.complete-workflow-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.complete-workflow-subtitle {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #6B7280;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease 0.15s, transform 0.6s ease 0.15s;
+}
+
+/* Workflow Card */
+.complete-workflow-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem 1.5rem;
+  height: 100%;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #F3F4F6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.complete-workflow-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(32, 178, 170, 0.02) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.complete-workflow-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(32, 178, 170, 0.12);
+  border-color: rgba(32, 178, 170, 0.2);
+}
+
+.complete-workflow-card:hover::before {
+  opacity: 1;
+}
+
+/* Icon */
+.complete-workflow-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 1;
+}
+
+.complete-workflow-icon svg {
+  width: 32px;
+  height: 32px;
+  transition: all 0.3s ease;
+}
+
+.complete-workflow-card:hover .complete-workflow-icon {
+  transform: scale(1.1);
+  box-shadow: 0 8px 24px rgba(32, 178, 170, 0.2);
+}
+
+.complete-workflow-card:hover .complete-workflow-icon svg {
+  transform: scale(1.05);
+}
+
+/* Card Content */
+.complete-workflow-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.complete-workflow-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+  transition: all 0.3s ease;
+}
+
+.complete-workflow-card:hover .complete-workflow-card-title {
+  color: #20B2AA;
+}
+
+.complete-workflow-card-subtitle {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: #6B7280;
+  line-height: 1.5;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.complete-workflow-card:hover .complete-workflow-card-subtitle {
+  color: #4B5563;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation Classes */
+.animate-fade-in-up {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.animate-fade-in-up-delay-1 {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition-delay: 0.1s !important;
+}
+
+.animate-fade-in-up-delay-2 {
+  animation: fadeInUp 0.6s ease 0.1s forwards;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.animate-fade-in-up-delay-3 {
+  animation: fadeInUp 0.6s ease 0.2s forwards;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.animate-fade-in-up-delay-4 {
+  animation: fadeInUp 0.6s ease 0.3s forwards;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.animate-fade-in-up-delay-5 {
+  animation: fadeInUp 0.6s ease 0.4s forwards;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.animate-fade-in-up-delay-6 {
+  animation: fadeInUp 0.6s ease 0.5s forwards;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.animate-fade-in-up-delay-7 {
+  animation: fadeInUp 0.6s ease 0.6s forwards;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Responsive Design - Large Desktops (1400px+) */
+@media (min-width: 1400px) {
+  .complete-workflow-section {
+    padding: 6rem 0;
+  }
+
+  .complete-workflow-title {
+    font-size: 3rem;
+  }
+
+  .complete-workflow-card {
+    padding: 3rem 2rem;
+    min-height: 240px;
+  }
+
+  .complete-workflow-icon {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 1.75rem;
+  }
+
+  .complete-workflow-icon svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .complete-workflow-card-title {
+    font-size: 1.375rem;
+  }
+
+  .complete-workflow-card-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive Design - Desktops (1200px to 1399px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .complete-workflow-section {
+    padding: 5.5rem 0;
+  }
+
+  .complete-workflow-title {
+    font-size: 2.875rem;
+  }
+
+  .complete-workflow-card {
+    padding: 2.75rem 1.75rem;
+    min-height: 230px;
+  }
+}
+
+/* Responsive Design - Laptops (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .complete-workflow-section {
+    padding: 5rem 0;
+  }
+
+  .complete-workflow-header {
+    margin-bottom: 3.5rem;
+  }
+
+  .complete-workflow-title {
+    font-size: 2.5rem;
+  }
+
+  .complete-workflow-subtitle {
+    font-size: 1.0625rem;
+  }
+
+  .complete-workflow-card {
+    padding: 2.25rem 1.5rem;
+    min-height: 220px;
+  }
+
+  .complete-workflow-icon {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 1.25rem;
+  }
+
+  .complete-workflow-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .complete-workflow-card-title {
+    font-size: 1.1875rem;
+  }
+
+  .complete-workflow-card-subtitle {
+    font-size: 0.9375rem;
+  }
+}
+
+/* Responsive Design - Tablets (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .complete-workflow-section {
+    padding: 4.5rem 0;
+  }
+
+  .complete-workflow-header {
+    margin-bottom: 3rem;
+  }
+
+  .complete-workflow-title {
+    font-size: 2.25rem;
+  }
+
+  .complete-workflow-subtitle {
+    font-size: 1.0625rem;
+    padding: 0 1rem;
+  }
+
+  .complete-workflow-card {
+    padding: 2rem 1.25rem;
+    min-height: 200px;
+  }
+
+  .complete-workflow-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1.25rem;
+  }
+
+  .complete-workflow-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .complete-workflow-card-title {
+    font-size: 1.125rem;
+  }
+
+  .complete-workflow-card-subtitle {
+    font-size: 0.875rem;
+  }
+}
+
+/* Responsive Design - Mobile Landscape (576px to 767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .complete-workflow-section {
+    padding: 4rem 0;
+  }
+
+  .complete-workflow-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .complete-workflow-title {
+    font-size: 2rem;
+    margin-bottom: 0.875rem;
+  }
+
+  .complete-workflow-subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .complete-workflow-card {
+    padding: 2rem 1.5rem;
+    min-height: 200px;
+    margin-bottom: 1rem;
+  }
+
+  .complete-workflow-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1.25rem;
+  }
+
+  .complete-workflow-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .complete-workflow-card-title {
+    font-size: 1.125rem;
+  }
+
+  .complete-workflow-card-subtitle {
+    font-size: 0.875rem;
+  }
+}
+
+/* Responsive Design - Mobile Portrait (up to 575px) */
+@media (max-width: 575.98px) {
+  .complete-workflow-section {
+    padding: 3.5rem 0;
+  }
+
+  .complete-workflow-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .complete-workflow-title {
+    font-size: 1.875rem;
+    margin-bottom: 0.75rem;
+    padding: 0 0.5rem;
+  }
+
+  .complete-workflow-subtitle {
+    font-size: 0.9375rem;
+    padding: 0 1rem;
+    line-height: 1.5;
+  }
+
+  .complete-workflow-card {
+    padding: 2rem 1.25rem;
+    min-height: 200px;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+  }
+
+  .complete-workflow-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+  }
+
+  .complete-workflow-icon svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .complete-workflow-card-title {
+    font-size: 1.0625rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .complete-workflow-card-subtitle {
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+}
+
+/* Extra Small Mobile (up to 375px) */
+@media (max-width: 375px) {
+  .complete-workflow-section {
+    padding: 3rem 0;
+  }
+
+  .complete-workflow-title {
+    font-size: 1.625rem;
+  }
+
+  .complete-workflow-subtitle {
+    font-size: 0.875rem;
+  }
+
+  .complete-workflow-card {
+    padding: 1.75rem 1rem;
+    min-height: 180px;
+  }
+
+  .complete-workflow-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 0.875rem;
+  }
+
+  .complete-workflow-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .complete-workflow-card-title {
+    font-size: 1rem;
+  }
+
+  .complete-workflow-card-subtitle {
+    font-size: 0.8125rem;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .complete-workflow-card,
+  .complete-workflow-title,
+  .complete-workflow-subtitle,
+  .complete-workflow-icon,
+  .complete-workflow-card-title,
+  .complete-workflow-card-subtitle {
+    transition: none;
+    animation: none;
+  }
+
+  .complete-workflow-card {
+    opacity: 1;
+    transform: none;
+  }
+
+  .animate-fade-in-up,
+  .animate-fade-in-up-delay-1,
+  .animate-fade-in-up-delay-2,
+  .animate-fade-in-up-delay-3,
+  .animate-fade-in-up-delay-4,
+  .animate-fade-in-up-delay-5,
+  .animate-fade-in-up-delay-6,
+  .animate-fade-in-up-delay-7 {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .complete-workflow-section {
+    padding: 2rem 0;
+    background: #ffffff;
+  }
+
+  .complete-workflow-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #E5E7EB;
+    page-break-inside: avoid;
+  }
+}
+

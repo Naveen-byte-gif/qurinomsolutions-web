@@ -1,0 +1,297 @@
+/**
+ * Core Values Section Styles
+ * 
+ * Professional, responsive core values section styles
+ * Optimized for mobile, tablet, laptop, and desktop
+ * Performance-focused with CSS best practices
+ * Includes smooth, professional animations
+ */
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Core Values Section */
+.core-values-section {
+  padding: 100px 0;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+/* Section Header */
+.core-values-header {
+  text-align: center;
+  margin-bottom: 64px;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.core-values-title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1A2B3B;
+  margin-bottom: 16px;
+}
+
+.core-values-subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #6B7A8B;
+  margin: 0;
+}
+
+/* Value Card */
+.core-value-card {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 40px 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+  text-align: left;
+}
+
+.core-value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon Wrapper */
+.core-value-icon-wrapper {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.core-value-icon {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F0F4F8;
+  border-radius: 50%;
+  color: #348C80;
+  transition: all 0.3s ease;
+}
+
+.core-value-card:hover .core-value-icon {
+  background-color: #D1F0EB;
+  transform: scale(1.1);
+}
+
+.core-value-icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+/* Value Title */
+.core-value-title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #1A2B3B;
+  margin-bottom: 12px;
+}
+
+/* Value Description */
+.core-value-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #6B7A8B;
+  margin: 0;
+}
+
+/* Animation Classes */
+.animate-fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Responsive Design - Tablets */
+@media (max-width: 991.98px) {
+  .core-values-section {
+    padding: 80px 0;
+  }
+
+  .core-values-header {
+    margin-bottom: 48px;
+  }
+
+  .core-values-title {
+    font-size: 36px;
+  }
+
+  .core-values-subtitle {
+    font-size: 17px;
+  }
+
+  .core-value-card {
+    padding: 35px 28px;
+  }
+
+  .core-value-icon-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .core-value-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .core-value-icon svg {
+    width: 42px;
+    height: 42px;
+  }
+
+  .core-value-title {
+    font-size: 20px;
+  }
+
+  .core-value-description {
+    font-size: 14px;
+  }
+}
+
+/* Responsive Design - Mobile */
+@media (max-width: 767.98px) {
+  .core-values-section {
+    padding: 60px 0;
+  }
+
+  .core-values-header {
+    margin-bottom: 40px;
+    padding: 0 15px;
+  }
+
+  .core-values-title {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+
+  .core-values-subtitle {
+    font-size: 16px;
+  }
+
+  .core-value-card {
+    padding: 32px 24px;
+  }
+
+  .core-value-icon-wrapper {
+    margin-bottom: 18px;
+  }
+
+  .core-value-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .core-value-icon svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .core-value-title {
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+
+  .core-value-description {
+    font-size: 14px;
+  }
+}
+
+/* Responsive Design - Small Mobile */
+@media (max-width: 575.98px) {
+  .core-values-section {
+    padding: 50px 0;
+  }
+
+  .core-values-header {
+    margin-bottom: 32px;
+  }
+
+  .core-values-title {
+    font-size: 28px;
+  }
+
+  .core-values-subtitle {
+    font-size: 15px;
+  }
+
+  .core-value-card {
+    padding: 28px 20px;
+  }
+
+  .core-value-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .core-value-icon svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .core-value-title {
+    font-size: 18px;
+  }
+
+  .core-value-description {
+    font-size: 13px;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1400px) {
+  .core-values-section {
+    padding: 120px 0;
+  }
+
+  .core-values-header {
+    margin-bottom: 80px;
+  }
+
+  .core-values-title {
+    font-size: 48px;
+  }
+
+  .core-values-subtitle {
+    font-size: 20px;
+  }
+
+  .core-value-card {
+    padding: 48px 40px;
+  }
+
+  .core-value-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .core-value-icon svg {
+    width: 52px;
+    height: 52px;
+  }
+
+  .core-value-title {
+    font-size: 24px;
+  }
+
+  .core-value-description {
+    font-size: 16px;
+  }
+}
+

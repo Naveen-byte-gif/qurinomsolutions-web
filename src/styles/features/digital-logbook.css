@@ -1,0 +1,26 @@
+/**
+ * Digital Log Book Feature Styles
+ * 
+ * Responsive design optimized for all device sizes
+ * Extends base feature-card styles from features.css
+ */
+
+.feature-card-logbook::before {
+  background: linear-gradient(90deg, #b4e6dc 0%, #d4f4ec 100%);
+}
+
+.icon-logbook {
+  background: linear-gradient(135deg, #b4e6dc 0%, #d4f4ec 50%, #b4e6dc 100%);
+  background-size: 200% 200%;
+  box-shadow: 0 4px 16px rgba(180, 230, 220, 0.25),
+    0 2px 8px rgba(180, 230, 220, 0.15);
+}
+
+.icon-logbook svg {
+  stroke: #7dd3c0;
+}
+
+.feature-card-logbook:hover .feature-card-title {
+  color: #7dd3c0;
+}
+

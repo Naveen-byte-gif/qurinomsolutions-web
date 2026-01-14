@@ -1,0 +1,77 @@
+/* Bootstrap CSS */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Tailwind CSS */
+@import "tailwindcss";
+
+/* Custom Styles */
+@import '../styles/custom.css';
+@import '../styles/hero.css';
+@import '../styles/features.css';
+@import '../styles/features/building-resident.css';
+@import '../styles/features/complaints-maintenance.css';
+@import '../styles/features/payments-billing.css';
+@import '../styles/features/digital-logbook.css';
+@import '../styles/features/staff-vendor.css';
+@import '../styles/features/notices-announcements.css';
+@import '../styles/powerful-features.css';
+@import '../styles/complaint-maintenance.css';
+@import '../styles/payments-invoicing.css';
+@import '../styles/staff-work-management.css';
+@import '../styles/notices-communication.css';
+@import '../styles/reports-analytics.css';
+@import '../styles/simple-process.css';
+@import '../styles/role-based-permissions.css';
+@import '../styles/why-communities-love.css';
+@import '../styles/ready-to-digitize.css';
+@import '../styles/pricing.css';
+@import '../styles/pricing-cta.css';
+@import '../styles/footer.css';
+@import '../styles/about-hero.css';
+@import '../styles/who-we-are.css';
+@import '../styles/mission-vision.css';
+@import '../styles/core-values.css';
+@import '../styles/about-features.css';
+@import '../styles/get-in-touch.css';
+@import '../styles/contact-form.css';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: 80px; /* Account for fixed navbar */
+}
+
+/* Ensure no gap between navbar and hero section */
+main#main-content {
+  margin: 0;
+  padding: 0;
+}
+
+main#main-content > *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}

@@ -1,0 +1,26 @@
+/**
+ * Notices & Announcements Feature Styles
+ * 
+ * Responsive design optimized for all device sizes
+ * Extends base feature-card styles from features.css
+ */
+
+.feature-card-notices::before {
+  background: linear-gradient(90deg, #e6d4f0 0%, #f0e4f8 100%);
+}
+
+.icon-notices {
+  background: linear-gradient(135deg, #e6d4f0 0%, #f0e4f8 50%, #e6d4f0 100%);
+  background-size: 200% 200%;
+  box-shadow: 0 4px 16px rgba(230, 212, 240, 0.25),
+    0 2px 8px rgba(230, 212, 240, 0.15);
+}
+
+.icon-notices svg {
+  stroke: #c9a8e0;
+}
+
+.feature-card-notices:hover .feature-card-title {
+  color: #c9a8e0;
+}
+

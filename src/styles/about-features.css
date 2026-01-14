@@ -1,0 +1,214 @@
+/**
+ * About Features Section Styles
+ * 
+ * Professional, responsive about features section styles
+ * Optimized for mobile, tablet, laptop, and desktop
+ * Performance-focused with CSS best practices
+ * Includes smooth, professional animations
+ */
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* About Features Section */
+.about-features-section {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F7FAFC 100%);
+  position: relative;
+}
+
+/* Feature Card */
+.about-feature-card {
+  text-align: center;
+  padding: 40px 30px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.about-feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon Wrapper */
+.about-feature-icon-wrapper {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-feature-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #D1F0EB 0%, #E8F4F6 100%);
+  border-radius: 20px;
+  color: #348C80;
+  transition: all 0.3s ease;
+}
+
+.about-feature-card:hover .about-feature-icon {
+  background: linear-gradient(135deg, #348C80 0%, #2A6F65 100%);
+  color: #FFFFFF;
+  transform: scale(1.1);
+}
+
+.about-feature-icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+/* Feature Title */
+.about-feature-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #1A2B3B;
+  margin-bottom: 12px;
+}
+
+/* Feature Description */
+.about-feature-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #6B7A8B;
+  margin: 0;
+}
+
+/* Animation Classes */
+.animate-fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Responsive Design - Tablets */
+@media (max-width: 991.98px) {
+  .about-features-section {
+    padding: 80px 0;
+  }
+
+  .about-feature-card {
+    padding: 35px 25px;
+  }
+
+  .about-feature-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 18px;
+  }
+
+  .about-feature-icon svg {
+    width: 42px;
+    height: 42px;
+  }
+
+  .about-feature-title {
+    font-size: 19px;
+  }
+
+  .about-feature-description {
+    font-size: 14px;
+  }
+}
+
+/* Responsive Design - Mobile */
+@media (max-width: 767.98px) {
+  .about-features-section {
+    padding: 60px 0;
+  }
+
+  .about-feature-card {
+    padding: 30px 20px;
+  }
+
+  .about-feature-icon-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .about-feature-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+  }
+
+  .about-feature-icon svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .about-feature-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .about-feature-description {
+    font-size: 14px;
+  }
+}
+
+/* Responsive Design - Small Mobile */
+@media (max-width: 575.98px) {
+  .about-features-section {
+    padding: 50px 0;
+  }
+
+  .about-feature-card {
+    padding: 28px 18px;
+  }
+
+  .about-feature-title {
+    font-size: 17px;
+  }
+
+  .about-feature-description {
+    font-size: 13px;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1400px) {
+  .about-features-section {
+    padding: 120px 0;
+  }
+
+  .about-feature-card {
+    padding: 45px 35px;
+  }
+
+  .about-feature-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 22px;
+  }
+
+  .about-feature-icon svg {
+    width: 52px;
+    height: 52px;
+  }
+
+  .about-feature-title {
+    font-size: 22px;
+  }
+
+  .about-feature-description {
+    font-size: 16px;
+  }
+}
+

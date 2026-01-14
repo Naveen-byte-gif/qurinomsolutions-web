@@ -1,0 +1,276 @@
+/**
+ * Who We Are Section Styles
+ * 
+ * Professional, responsive who we are section styles
+ * Optimized for mobile, tablet, laptop, and desktop
+ * Performance-focused with CSS best practices
+ * Includes smooth, professional animations
+ */
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Who We Are Section */
+.who-we-are-section {
+  padding: 100px 0;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.who-we-are-content {
+  padding-right: 40px;
+}
+
+/* Section Heading */
+.who-we-are-heading {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1A2B3B;
+  margin-bottom: 32px;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Text Content */
+.who-we-are-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #4A5568;
+  margin-bottom: 24px;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.who-we-are-text:last-of-type {
+  margin-bottom: 40px;
+}
+
+/* Features List */
+.who-we-are-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.who-we-are-feature-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4A5568;
+}
+
+.who-we-are-feature-item:last-child {
+  margin-bottom: 0;
+}
+
+.who-we-are-feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  background-color: #D1F0EB;
+  border-radius: 50%;
+  margin-right: 16px;
+  color: #348C80;
+  flex-shrink: 0;
+}
+
+.who-we-are-feature-icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Image Wrapper */
+.who-we-are-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.who-we-are-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation Classes */
+.animate-fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in-up-delay-1 {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.1s forwards;
+}
+
+.animate-fade-in-up-delay-2 {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.2s forwards;
+}
+
+.animate-fade-in-up-delay-3 {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.3s forwards;
+}
+
+.animate-fade-in-up-delay-4 {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.4s forwards;
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Responsive Design - Tablets */
+@media (max-width: 991.98px) {
+  .who-we-are-section {
+    padding: 80px 0;
+  }
+
+  .who-we-are-content {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .who-we-are-heading {
+    font-size: 36px;
+    margin-bottom: 28px;
+  }
+
+  .who-we-are-text {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  .who-we-are-text:last-of-type {
+    margin-bottom: 32px;
+  }
+
+  .who-we-are-feature-item {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+}
+
+/* Responsive Design - Mobile */
+@media (max-width: 767.98px) {
+  .who-we-are-section {
+    padding: 60px 0;
+  }
+
+  .who-we-are-content {
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+
+  .who-we-are-heading {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .who-we-are-text {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+  }
+
+  .who-we-are-text:last-of-type {
+    margin-bottom: 28px;
+  }
+
+  .who-we-are-feature-item {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+
+  .who-we-are-feature-icon {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    margin-right: 12px;
+  }
+
+  .who-we-are-feature-icon svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .who-we-are-image-wrapper {
+    padding: 0 15px;
+  }
+}
+
+/* Responsive Design - Small Mobile */
+@media (max-width: 575.98px) {
+  .who-we-are-section {
+    padding: 50px 0;
+  }
+
+  .who-we-are-heading {
+    font-size: 28px;
+  }
+
+  .who-we-are-text {
+    font-size: 15px;
+  }
+
+  .who-we-are-feature-item {
+    font-size: 14px;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1400px) {
+  .who-we-are-section {
+    padding: 120px 0;
+  }
+
+  .who-we-are-content {
+    padding-right: 60px;
+  }
+
+  .who-we-are-heading {
+    font-size: 48px;
+  }
+
+  .who-we-are-text {
+    font-size: 19px;
+  }
+
+  .who-we-are-feature-item {
+    font-size: 17px;
+  }
+}
+

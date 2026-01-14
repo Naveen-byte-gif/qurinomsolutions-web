@@ -1,0 +1,26 @@
+/**
+ * Complaints & Maintenance Feature Styles
+ * 
+ * Responsive design optimized for all device sizes
+ * Extends base feature-card styles from features.css
+ */
+
+.feature-card-complaints::before {
+  background: linear-gradient(90deg, #ffd4b8 0%, #ffe4d1 100%);
+}
+
+.icon-complaints {
+  background: linear-gradient(135deg, #ffd4b8 0%, #ffe4d1 50%, #ffd4b8 100%);
+  background-size: 200% 200%;
+  box-shadow: 0 4px 16px rgba(255, 212, 184, 0.25),
+    0 2px 8px rgba(255, 212, 184, 0.15);
+}
+
+.icon-complaints svg {
+  stroke: #ffb88c;
+}
+
+.feature-card-complaints:hover .feature-card-title {
+  color: #ffb88c;
+}
+
